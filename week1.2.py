@@ -87,18 +87,18 @@
 # print("above average list: ",above, "| low average values:",low)   
 
 
-# Replace Missing Values (None) with the Average 
-List=[50,None,70,None,90]
-finallist=[]
-avaiable=[x for x in List if  x is not None]
-for value in List: 
-    if value==None:
-        finallist.append(sum(avaiable)/len(avaiable))
-    else:
-        finallist.append(value)   
+# # Replace Missing Values (None) with the Average 
+# List=[50,None,70,None,90]
+# finallist=[]
+# avaiable=[x for x in List if  x is not None]
+# for value in List: 
+#     if value==None:
+#         finallist.append(sum(avaiable)/len(avaiable))
+#     else:
+#         finallist.append(value)   
      
 
-print(finallist) 
+# print(finallist) 
     
 
 
