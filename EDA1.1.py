@@ -36,7 +36,7 @@ data=[1,1,2]
 unique_list = [x for x in data if x not in data and not data.add(x)]
 print(unique_list)
 # : Histogram Plot
-plt.figure(figsize=(10,6))
+plt.figure(figsize=(12,8))
 sns.histplot(data=df, x='Age', hue='Survived', bins=30, kde=True, palette='Set1')
 plt.title('Age Distribution by Survival')
 plt.xlabel('Age')
