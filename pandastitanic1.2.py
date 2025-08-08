@@ -12,7 +12,6 @@ print(df.describe())
 
 # 3. Count of missing values per column
 print("\nMissing values count:")
-
 print(df.isnull().sum())
 
 # 4. Survival rate overall
