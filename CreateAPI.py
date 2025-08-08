@@ -14,11 +14,11 @@ params = urllib.parse.quote_plus(
 engine = create_engine(f"mssql+pyodbc:///?odbc_connect={params}")
 
 # --- API Route to Get All Records ---
-@app.route('/currentcondition', methods=['GET'])
+@app.route('/weather', methods=['GET'])
 def get_all_conditions():
     try:
         with engine.connect() as conn:
-            query = text("SELECT * FROM CurrentCondition")
+            query = text("SELECT * FROM weather  ")
             result = conn.execute(query)
             rows = result.fetchall()
             columns = result.keys()  # get column names
